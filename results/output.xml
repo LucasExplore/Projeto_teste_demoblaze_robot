@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-03-01T15:33:29.029195" rpa="false" schemaversion="5">
+<suite id="s1" name="Projeto teste demoblaze robot" source="C:\Users\User\Projeto_teste_demoblaze_robot">
+<suite id="s1-s1" name="Tests" source="C:\Users\User\Projeto_teste_demoblaze_robot\tests">
+<suite id="s1-s1-s1" name="Demoblaze" source="C:\Users\User\Projeto_teste_demoblaze_robot\tests\demoblaze.robot">
+<test id="s1-s1-s1-t1" name="Cadastro do usuario" line="15">
+<kw name="Acessar o site demoblaze" owner="setup" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-01T15:33:29.129694" level="INFO">Opening browser 'chrome' to base url 'https://www.demoblaze.com/index.html'.</msg>
+<arg>${URL}</arg>
+<arg>${NAVEGADOR}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-01T15:33:29.129694" elapsed="2.547501"/>
+</kw>
+<status status="PASS" start="2024-03-01T15:33:29.128694" elapsed="2.548501"/>
+</kw>
+<kw name="Cadastro de usuario" owner="demoblaze">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-01T15:33:31.678195" level="INFO">Clicking element 'id=signin2'.</msg>
+<arg>${SINGUP}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-01T15:33:31.678195" elapsed="0.026499"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-01T15:33:36.705333" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-01T15:33:31.704694" elapsed="5.000639"/>
+</kw>
+<kw name="FakerLibrary.Name">
+<msg time="2024-03-01T15:33:36.707333" level="FAIL">No keyword with name 'FakerLibrary.Name' found.</msg>
+<var>${USUARIO_text}</var>
+<status status="FAIL" start="2024-03-01T15:33:36.706332" elapsed="0.001501">No keyword with name 'FakerLibrary.Name' found.</status>
+</kw>
+<kw name="FakerLibrary.Password">
+<var>${SENHA_text}</var>
+<status status="NOT RUN" start="2024-03-01T15:33:36.709333" elapsed="0.001500"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${CADASTRO_USUARIO}</arg>
+<arg>${USUARIO_text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-01T15:33:36.711333" elapsed="0.000500"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${CADASTRO_SENHA}</arg>
+<arg>${SENHA_text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-01T15:33:36.711833" elapsed="0.000000"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<arg>${USUARIO_text}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="NOT RUN" start="2024-03-01T15:33:36.711833" elapsed="0.000000"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<arg>${SENHA_text}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="NOT RUN" start="2024-03-01T15:33:36.711833" elapsed="0.000500"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${BOTAO_CADASTRO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-01T15:33:36.712333" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-03-01T15:33:36.712333" elapsed="0.000000"/>
+</kw>
+<kw name="Handle Alert" owner="SeleniumLibrary">
+<arg>accept</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<status status="NOT RUN" start="2024-03-01T15:33:36.712333" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-03-01T15:33:36.712833" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-03-01T15:33:31.677695" elapsed="5.035138">No keyword with name 'FakerLibrary.Name' found.</status>
+</kw>
+<kw name="Fechar o site demoblaze" owner="setup" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-01T15:33:36.713334" elapsed="2.134321"/>
+</kw>
+<status status="PASS" start="2024-03-01T15:33:36.713334" elapsed="2.134822"/>
+</kw>
+<status status="FAIL" start="2024-03-01T15:33:29.128195" elapsed="9.720461">No keyword with name 'FakerLibrary.Name' found.</status>
+</test>
+<status status="FAIL" start="2024-03-01T15:33:29.043195" elapsed="9.806962"/>
+</suite>
+<status status="FAIL" start="2024-03-01T15:33:29.041694" elapsed="9.809463"/>
+</suite>
+<status status="FAIL" start="2024-03-01T15:33:29.031195" elapsed="9.821460"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Projeto teste demoblaze robot">Projeto teste demoblaze robot</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Tests">Projeto teste demoblaze robot.Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Demoblaze">Projeto teste demoblaze robot.Tests.Demoblaze</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-03-01T15:33:29.121694" level="ERROR">Error in file 'C:\Users\User\Projeto_teste_demoblaze_robot\keywords\demoblaze.robot' on line 3: Importing library 'FakerLibrary' failed: ModuleNotFoundError: No module named 'pkg_resources'
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\FakerLibrary\__init__.py", line 1, in &lt;module&gt;
+    import pkg_resources
+PYTHONPATH:
+  C:\Users\User\Projeto_teste_demoblaze_robot\lib
+  C:\Users\User\Projeto_teste_demoblaze_robot\resources
+  c:\Users\User\.vscode\extensions\d-biehl.robotcode-0.76.2\bundled\libs
+  c:\Users\User\.vscode\extensions\d-biehl.robotcode-0.76.2\bundled\tool\robotcode
+  C:\Users\User\AppData\Local\Programs\Python\Python312\python312.zip
+  C:\Users\User\AppData\Local\Programs\Python\Python312\DLLs
+  C:\Users\User\AppData\Local\Programs\Python\Python312\Lib
+  C:\Users\User\AppData\Local\Programs\Python\Python312
+  C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages</msg>
+<msg time="2024-03-01T15:33:29.125694" level="ERROR">Error in file 'C:\Users\User\Projeto_teste_demoblaze_robot\tests\demoblaze.robot' on line 8: Importing library 'FakerLibrary' failed: ModuleNotFoundError: No module named 'pkg_resources'
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\FakerLibrary\__init__.py", line 1, in &lt;module&gt;
+    import pkg_resources
+PYTHONPATH:
+  C:\Users\User\Projeto_teste_demoblaze_robot\lib
+  C:\Users\User\Projeto_teste_demoblaze_robot\resources
+  c:\Users\User\.vscode\extensions\d-biehl.robotcode-0.76.2\bundled\libs
+  c:\Users\User\.vscode\extensions\d-biehl.robotcode-0.76.2\bundled\tool\robotcode
+  C:\Users\User\AppData\Local\Programs\Python\Python312\python312.zip
+  C:\Users\User\AppData\Local\Programs\Python\Python312\DLLs
+  C:\Users\User\AppData\Local\Programs\Python\Python312\Lib
+  C:\Users\User\AppData\Local\Programs\Python\Python312
+  C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages</msg>
+</errors>
+</robot>
